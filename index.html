@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">12:00 <span id="am-pm">AM</span></div>
+                <div class="date" id="date">Monday, 1 Jan</div>
+                <button onclick="fetchWeatherByLocation()" id="get-weather">Get Current Weather</button>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Timezone: GMTNaN</div>
+                <div id="country" class="country">US</div>
+            </div>
+            <div class="others" id="current-weather-items">
+                <!-- Weather data with images will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="future-forecast" id="weather-forecast">
+        <!-- Future weather forecast with images will be inserted here -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
